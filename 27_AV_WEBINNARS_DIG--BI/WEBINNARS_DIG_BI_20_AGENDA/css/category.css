@@ -1,0 +1,71 @@
+#fullcalendar .fc-daygrid-event:not(.active) .fc-event-main,
+#fullcalendar .fc-daygrid-event:not(.active),
+#ondemand #cat-content>*>ul>li:not(.active){
+	background-color: #fff !important;
+	color: #333333 !important;
+}
+#event>*>.cat-alta_especialidad,
+#ondemand #cat-content td.cat-alta_especialidad>ul>li,
+#ondemand #cat-header td.cat-alta_especialidad,
+#fullcalendar .fc-timegrid-event.cat-alta_especialidad,
+#fullcalendar .fc-daygrid-event.cat-alta_especialidad,
+#fullcalendar .fc-button.cat-alta_especialidad{
+	background-color: #77BC59;
+	border-color: #77BC59;
+	color: #fff;
+}
+#event>*>*.cat-alta_especialidad .ev-title{
+	color: #77BC59 !important;
+}
+#event>*>.cat-cardiometabolico,
+#ondemand #cat-content td.cat-cardiometabolico>ul>li,
+#ondemand #cat-header td.cat-cardiometabolico,
+#fullcalendar .fc-timegrid-event.cat-cardiometabolico,
+#fullcalendar .fc-daygrid-event.cat-cardiometabolico,
+#fullcalendar .fc-button.cat-cardiometabolico{
+	background-color: #E7505A;
+	border-color: #E7505A;
+	color: #fff;
+}
+#event>*>*.cat-cardiometabolico .ev-title{
+	color: #E7505A !important;
+}
+#event>*>.cat-ginecologia_urologia,
+#ondemand #cat-content td.cat-ginecologia_urologia>ul>li,
+#ondemand #cat-header td.cat-ginecologia_urologia,
+#fullcalendar .fc-timegrid-event.cat-ginecologia_urologia,
+#fullcalendar .fc-daygrid-event.cat-ginecologia_urologia,
+#fullcalendar .fc-button.cat-ginecologia_urologia{
+	background-color: #5B4198;
+	border-color: #5B4198;
+	color: #fff;
+}
+#event>*>*.cat-ginecologia_urologia .ev-title{
+	color: #5B4198 !important;
+}
+#event>*>.cat-oncologia,
+#ondemand #cat-content td.cat-oncologia>ul>li,
+#ondemand #cat-header td.cat-oncologia,
+#fullcalendar .fc-timegrid-event.cat-oncologia,
+#fullcalendar .fc-daygrid-event.cat-oncologia,
+#fullcalendar .fc-button.cat-oncologia{
+	background-color: #DCBB3E;
+	border-color: #DCBB3E;
+	color: #fff;
+}
+#event>*>*.cat-oncologia .ev-title{
+	color: #DCBB3E !important;
+}
+#event>*>.cat-respiratorio,
+#ondemand #cat-content td.cat-respiratorio>ul>li,
+#ondemand #cat-header td.cat-respiratorio,
+#fullcalendar .fc-timegrid-event.cat-respiratorio,
+#fullcalendar .fc-daygrid-event.cat-respiratorio,
+#fullcalendar .fc-button.cat-respiratorio{
+	background-color: #0090B0;
+	border-color: #0090B0;
+	color: #fff;
+}
+#event>*>*.cat-respiratorio .ev-title{
+	color: #0090B0 !important;
+}

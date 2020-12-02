@@ -1,0 +1,64 @@
+/* content */
+#event>*>*>div>*,
+#event>*>*>div{
+	position: relative;
+	display: block;
+	font-size: 13px;
+}
+#event>*>*>div:not(:last-of-type){
+	margin-bottom: 12px;
+	padding-bottom: 12px;
+	border-bottom: solid 1px rgba(153, 153, 153, 0.5);
+}
+#event>*>*>div>.not-use:not(.__visible){
+	display: none;
+}
+/* action buttons */
+#ev-actions{}
+#ev-actions>*{
+	display: inline-block;
+	vertical-align: top;
+}
+#ev-actions>*:first-child{
+	float: left;
+}
+#ev-actions>*:last-child{
+	float: right;
+}
+/* title */
+#event .ev-title{
+	background-color: #fff;
+	position: relative;
+	z-index: 3;
+	display: block;
+	font-size: 18px;
+}
+/* metadata */
+#event #ev-metadata{
+	width: 100%;
+	max-height: 333px;
+	padding-right: 15px;
+	margin-top: -28px;
+}
+#event #ev-metadata>*{
+	margin: 28px 0px;
+	/* margin: 28px 0px; */
+}
+#event #ev-metadata>*[class*="icon-"]{
+	padding-top: 0.4em;
+	padding-left: 37px;
+}
+#event #ev-metadata>*[class*="icon-"]:before{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	font-size: 27px;
+}
+/* ponentes */
+#event .ev-speaker{}
+#event .ev-speaker>*{
+	display: block;
+}
+#event .ev-speaker>div>*{
+	margin-top: 1em;
+}

@@ -1,0 +1,279 @@
+
+[class^="icon-"]:not(td),
+[class*=" icon-"]:not(td){
+	display: inline-block;
+}
+[class^="icon-inherit-inherit-inherit-after-"]>*>*>*:after,
+[class^="icon-inherit-inherit-after-"]>*>*:after,
+[class^="icon-inherit-after-"]>*:after,
+[class^="icon-after-"]:after,
+[class*=" icon-inherit-inherit-inherit-after-"]>*>*>*:after,
+[class*=" icon-inherit-inherit-after-"]>*>*:after,
+[class*=" icon-inherit-after-"]>*:after,
+[class*=" icon-after-"]:after,
+[class^="icon-inherit-inherit-inherit-"]:not([class^="icon-inherit-inherit-after-"])>*>*>*:before,
+[class^="icon-inherit-inherit-"]:not([class^="icon-inherit-inherit-after-"])>*>*:before,
+[class^="icon-inherit-"]:not([class^="icon-inherit-after-"])>*:before,
+[class^="icon-"]:not([class^="icon-after-"]):before,
+[class*=" icon-inherit-inherit-inherit-"]:not([class*=" icon-inherit-inherit-after-"])>*>*>*:before,
+[class*=" icon-inherit-inherit-"]:not([class*=" icon-inherit-inherit-after-"])>*>*:before,
+[class*=" icon-inherit-"]:not([class*=" icon-inherit-after-"])>*:before,
+[class*=" icon-"]:not([class*=" icon-after-"]):before{
+	font-family: "icon";
+
+	font-style: normal;
+	font-weight: normal;
+	speak: none;
+
+	display: block;
+	text-decoration: none;
+	/* width: 1em; */
+	/* margin-right: .2em; */
+	text-align: center;
+	/* opacity: .8; */
+
+	/* For safety - reset parent styles, that can break glyph codes*/
+	font-variant: normal;
+	text-transform: none;
+
+	/* fix buttons height, for twitter bootstrap */
+	line-height: 1em;
+
+	/* Animation center compensation - margins should be symmetric */
+	/* remove if not needed */
+	/* margin-left: .2em; */
+
+	/* you can be more comfortable with increased icons size */
+	/* font-size: 120%; */
+
+	/* Font smoothing. That was taken from TWBS */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	/* Uncomment for 3D effect */
+	/* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-inherit-inherit-inherit-after-altavoz>*>*>*:after,
+.icon-inherit-inherit-after-altavoz>*>*:after,
+.icon-inherit-after-altavoz>*:after,
+.icon-after-altavoz:after,
+.icon-inherit-inherit-inherit-altavoz>*>*>*:before,
+.icon-inherit-inherit-altavoz>*>*:before,
+.icon-inherit-altavoz>*:before,
+.icon-altavoz:before{
+	content: "\EA01"; /* '' */
+}
+.icon-inherit-inherit-inherit-after-audio>*>*>*:after,
+.icon-inherit-inherit-after-audio>*>*:after,
+.icon-inherit-after-audio>*:after,
+.icon-after-audio:after,
+.icon-inherit-inherit-inherit-audio>*>*>*:before,
+.icon-inherit-inherit-audio>*>*:before,
+.icon-inherit-audio>*:before,
+.icon-audio:before{
+	content: "\EA02"; /* '' */
+}
+.icon-inherit-inherit-inherit-after-buscar>*>*>*:after,
+.icon-inherit-inherit-after-buscar>*>*:after,
+.icon-inherit-after-buscar>*:after,
+.icon-after-buscar:after,
+.icon-inherit-inherit-inherit-buscar>*>*>*:before,
+.icon-inherit-inherit-buscar>*>*:before,
+.icon-inherit-buscar>*:before,
+.icon-buscar:before{
+	content: "\EA03"; /* '' */
+}
+.icon-inherit-inherit-inherit-after-calendar>*>*>*:after,
+.icon-inherit-inherit-after-calendar>*>*:after,
+.icon-inherit-after-calendar>*:after,
+.icon-after-calendar:after,
+.icon-inherit-inherit-inherit-calendar>*>*>*:before,
+.icon-inherit-inherit-calendar>*>*:before,
+.icon-inherit-calendar>*:before,
+.icon-calendar:before{
+	content: "\EA04"; /* '' */
+}
+.icon-inherit-inherit-inherit-after-close>*>*>*:after,
+.icon-inherit-inherit-after-close>*>*:after,
+.icon-inherit-after-close>*:after,
+.icon-after-close:after,
+.icon-inherit-inherit-inherit-close>*>*>*:before,
+.icon-inherit-inherit-close>*>*:before,
+.icon-inherit-close>*:before,
+.icon-close:before{
+	content: "\EA05"; /* '' */
+}
+.icon-inherit-inherit-inherit-after-cuenta>*>*>*:after,
+.icon-inherit-inherit-after-cuenta>*>*:after,
+.icon-inherit-after-cuenta>*:after,
+.icon-after-cuenta:after,
+.icon-inherit-inherit-inherit-cuenta>*>*>*:before,
+.icon-inherit-inherit-cuenta>*>*:before,
+.icon-inherit-cuenta>*:before,
+.icon-cuenta:before{
+	content: "\EA06"; /* '' */
+}
+.icon-inherit-inherit-inherit-after-descarga>*>*>*:after,
+.icon-inherit-inherit-after-descarga>*>*:after,
+.icon-inherit-after-descarga>*:after,
+.icon-after-descarga:after,
+.icon-inherit-inherit-inherit-descarga>*>*>*:before,
+.icon-inherit-inherit-descarga>*>*:before,
+.icon-inherit-descarga>*:before,
+.icon-descarga:before{
+	content: "\EA07"; /* '' */
+}
+.icon-inherit-inherit-inherit-after-envivo>*>*>*:after,
+.icon-inherit-inherit-after-envivo>*>*:after,
+.icon-inherit-after-envivo>*:after,
+.icon-after-envivo:after,
+.icon-inherit-inherit-inherit-envivo>*>*>*:before,
+.icon-inherit-inherit-envivo>*>*:before,
+.icon-inherit-envivo>*:before,
+.icon-envivo:before{
+	content: "\EA08"; /* '' */
+}
+.icon-inherit-inherit-inherit-after-home>*>*>*:after,
+.icon-inherit-inherit-after-home>*>*:after,
+.icon-inherit-after-home>*:after,
+.icon-after-home:after,
+.icon-inherit-inherit-inherit-home>*>*>*:before,
+.icon-inherit-inherit-home>*>*:before,
+.icon-inherit-home>*:before,
+.icon-home:before{
+	content: "\EA09"; /* '' */
+}
+.icon-inherit-inherit-inherit-after-inalambrico>*>*>*:after,
+.icon-inherit-inherit-after-inalambrico>*>*:after,
+.icon-inherit-after-inalambrico>*:after,
+.icon-after-inalambrico:after,
+.icon-inherit-inherit-inherit-inalambrico>*>*>*:before,
+.icon-inherit-inherit-inalambrico>*>*:before,
+.icon-inherit-inalambrico>*:before,
+.icon-inalambrico:before{
+	content: "\EA0A"; /* '' */
+}
+.icon-inherit-inherit-inherit-after-info>*>*>*:after,
+.icon-inherit-inherit-after-info>*>*:after,
+.icon-inherit-after-info>*:after,
+.icon-after-info:after,
+.icon-inherit-inherit-inherit-info>*>*>*:before,
+.icon-inherit-inherit-info>*>*:before,
+.icon-inherit-info>*:before,
+.icon-info:before{
+	content: "\EA0B"; /* '' */
+}
+.icon-inherit-inherit-inherit-after-location>*>*>*:after,
+.icon-inherit-inherit-after-location>*>*:after,
+.icon-inherit-after-location>*:after,
+.icon-after-location:after,
+.icon-inherit-inherit-inherit-location>*>*>*:before,
+.icon-inherit-inherit-location>*>*:before,
+.icon-inherit-location>*:before,
+.icon-location:before{
+	content: "\EA0C"; /* '' */
+}
+.icon-inherit-inherit-inherit-after-message>*>*>*:after,
+.icon-inherit-inherit-after-message>*>*:after,
+.icon-inherit-after-message>*:after,
+.icon-after-message:after,
+.icon-inherit-inherit-inherit-message>*>*>*:before,
+.icon-inherit-inherit-message>*>*:before,
+.icon-inherit-message>*:before,
+.icon-message:before{
+	content: "\EA0D"; /* '' */
+}
+.icon-inherit-inherit-inherit-after-relacionado>*>*>*:after,
+.icon-inherit-inherit-after-relacionado>*>*:after,
+.icon-inherit-after-relacionado>*:after,
+.icon-after-relacionado:after,
+.icon-inherit-inherit-inherit-relacionado>*>*>*:before,
+.icon-inherit-inherit-relacionado>*>*:before,
+.icon-inherit-relacionado>*:before,
+.icon-relacionado:before{
+	content: "\EA0E"; /* '' */
+}
+.icon-inherit-inherit-inherit-after-speaker>*>*>*:after,
+.icon-inherit-inherit-after-speaker>*>*:after,
+.icon-inherit-after-speaker>*:after,
+.icon-after-speaker:after,
+.icon-inherit-inherit-inherit-speaker>*>*>*:before,
+.icon-inherit-inherit-speaker>*>*:before,
+.icon-inherit-speaker>*:before,
+.icon-speaker:before{
+	content: "\EA0F"; /* '' */
+}
+.icon-inherit-inherit-inherit-after-subtitulos>*>*>*:after,
+.icon-inherit-inherit-after-subtitulos>*>*:after,
+.icon-inherit-after-subtitulos>*:after,
+.icon-after-subtitulos:after,
+.icon-inherit-inherit-inherit-subtitulos>*>*>*:before,
+.icon-inherit-inherit-subtitulos>*>*:before,
+.icon-inherit-subtitulos>*:before,
+.icon-subtitulos:before{
+	content: "\EA10"; /* '' */
+}
+.icon-inherit-inherit-inherit-after-time>*>*>*:after,
+.icon-inherit-inherit-after-time>*>*:after,
+.icon-inherit-after-time>*:after,
+.icon-after-time:after,
+.icon-inherit-inherit-inherit-time>*>*>*:before,
+.icon-inherit-inherit-time>*>*:before,
+.icon-inherit-time>*:before,
+.icon-time:before{
+	content: "\EA11"; /* '' */
+}
+.icon-inherit-inherit-inherit-after-tutorial>*>*>*:after,
+.icon-inherit-inherit-after-tutorial>*>*:after,
+.icon-inherit-after-tutorial>*:after,
+.icon-after-tutorial:after,
+.icon-inherit-inherit-inherit-tutorial>*>*>*:before,
+.icon-inherit-inherit-tutorial>*>*:before,
+.icon-inherit-tutorial>*:before,
+.icon-tutorial:before{
+	content: "\EA12"; /* '' */
+}
+.icon-inherit-inherit-inherit-after-video>*>*>*:after,
+.icon-inherit-inherit-after-video>*>*:after,
+.icon-inherit-after-video>*:after,
+.icon-after-video:after,
+.icon-inherit-inherit-inherit-video>*>*>*:before,
+.icon-inherit-inherit-video>*>*:before,
+.icon-inherit-video>*:before,
+.icon-video:before{
+	content: "\EA13"; /* '' */
+}
+.icon-inherit-inherit-inherit-after-web>*>*>*:after,
+.icon-inherit-inherit-after-web>*>*:after,
+.icon-inherit-after-web>*:after,
+.icon-after-web:after,
+.icon-inherit-inherit-inherit-web>*>*>*:before,
+.icon-inherit-inherit-web>*>*:before,
+.icon-inherit-web>*:before,
+.icon-web:before{
+	content: "\EA14"; /* '' */
+}
+
+:root{
+	--ICON--icon-altavoz: "\EA01";
+	--ICON--icon-audio: "\EA02";
+	--ICON--icon-buscar: "\EA03";
+	--ICON--icon-calendar: "\EA04";
+	--ICON--icon-close: "\EA05";
+	--ICON--icon-cuenta: "\EA06";
+	--ICON--icon-descarga: "\EA07";
+	--ICON--icon-envivo: "\EA08";
+	--ICON--icon-home: "\EA09";
+	--ICON--icon-inalambrico: "\EA0A";
+	--ICON--icon-info: "\EA0B";
+	--ICON--icon-location: "\EA0C";
+	--ICON--icon-message: "\EA0D";
+	--ICON--icon-relacionado: "\EA0E";
+	--ICON--icon-speaker: "\EA0F";
+	--ICON--icon-subtitulos: "\EA10";
+	--ICON--icon-time: "\EA11";
+	--ICON--icon-tutorial: "\EA12";
+	--ICON--icon-video: "\EA13";
+	--ICON--icon-web: "\EA14";
+}

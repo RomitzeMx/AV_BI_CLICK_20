@@ -1,0 +1,88 @@
+#body .body{
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+	counter-reset: paso;
+}
+#body>header .title>*{
+	margin-right: -44px;
+}
+#body .pasos{
+	position: absolute;
+}
+#body .pasos>.paso{
+	counter-increment: paso;
+	position: absolute;
+	right: 100%;
+	bottom: 50%;
+	width: 62px;
+	height: 50%;
+	box-sizing: content-box;
+	padding-bottom: 6px;
+	border-left: solid 1px;
+	border-bottom: solid 1px;
+	font-family: "Font/MyriadPro/Semibold";
+	color: var(--COLOR--blue-2);
+}
+#body .pasos>.paso:after{
+	background-color: var(--COLOR--darkblue);
+	border-radius: 100px;
+	content: counter(paso);
+	position: absolute;
+	left: 0px;
+	bottom: 100%;
+	width: 48px;
+	height: 48px;
+	font-size: 40px;
+	text-align: center;
+	line-height: 1.35;
+	color: #fff;
+	transform: translate(-50%, 0%);
+}
+#body .paso-1{
+    left: 174px;
+    top: 176px;
+    width: 272px;
+}
+#body .paso-2{
+    left: 174px;
+    bottom: 28px;
+    width: 228px;
+}
+#body .paso-3{
+    right: 141px;
+    top: 176px;
+    width: 269px;
+}
+.img-borde{
+	border: 5px solid var(--COLOR--blue-2);
+	box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.5);	
+}
+#body .pasos .txt{
+	position: absolute;
+	left: -5px;
+	right: 0px;
+	bottom: 100%;
+	margin-bottom: 14px;
+	font-family: "Font/MyriadPro/Semibold";
+	font-size: 18px;
+	color: var(--COLOR--darkblue);
+	line-height: 1.15;
+	letter-spacing: -0.01em;
+}
+#body .paso-1 .txt{
+	margin-right: -50px;
+}
+#body .paso-2 .txt{
+	margin-right: -95px;
+}
+#body .paso-3 .txt{
+	margin-right: -100px;
+}
+#body .img-btn.fue{
+	position: absolute;
+	right: 34px;
+	bottom: 8px;
+}

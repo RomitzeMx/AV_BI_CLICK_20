@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=1" />
+		<meta name="format-detection" content="telephone=no" />
+	<!-- START $ -->
+		<link rel="stylesheet" href="shared/css/$/utils.core.css" />
+		<script src="shared/js/$/utils.core.js"></script>
+		<!-- <link rel="stylesheet" href="shared/css/$/framework.name.css" /> -->
+		<!-- <script src="shared/js/$/framework.name.js"></script> -->
+		<link rel="stylesheet" href="shared/css/$/platform.veeva.css" />
+		<script src="shared/js/$/platform.veeva.js"></script>
+	<!-- END $ -->
+	<!-- START GLOBAL -->
+		<link rel="stylesheet" href="shared/css/index.css" />
+		<script src="shared/js/index.js"></script>
+		<script src="shared/js/menu.js"></script>
+	<!-- END GLOBAL -->
+	<!-- CALENDAR -->
+		<!-- CSS -->
+		<link href="lib/main.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/popup.css" />
+		<link rel="stylesheet" href="css/fullcalendar.css" />
+		<link rel="stylesheet" href="css/ondemand.css" />
+		<link rel="stylesheet" href="css/event.css" />
+		<link rel="stylesheet" href="css/agenda.css" />
+		<link rel="stylesheet" href="css/category.css" />
+		<!-- JS -->
+		<script src="lib/main.js"></script>
+		<script src="js/popup.js"></script>
+		<script src="js/fullcalendar.js"></script>
+		<!-- <script src="js/calendar-js/theme-chooser.js"></script> -->
+	<!-- START LOCAL -->
+		<!-- <link rel="stylesheet" href="css/index.css" /> -->
+		<script src="js/index.js"></script>
+	<!-- END LOCAL -->
+	</head>
+	<body id="body" font="Roboto">
+		<div id="fullcalendar">
+			<div id="calendar"></div>
+			<div class="fc-header-toolbar fc-header-toolbar-fake">
+				<div>
+					<!-- Botones de categorías generados automáticamente dependiendo de las categorías de todos los eventos -->
+					<div class="fc-button-group overflow-auto" id="cat-button"></div>
+				</div>
+				<div>
+					<div class="fc-button-group">
+						<button class="fc-button fc-has-icon" do-toggle="o ondemand">ON DEMAND</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="ondemand" class="fc" do-toggle-id="ondemand">
+			<div>
+				<div class="fc fc-header-toolbar fc-header-toolbar-fake">
+					<button class="fc-button fc-has-icon-before fc-button-sm" do-toggle="x">REGRESAR</button>
+				</div>
+				<h1 class="c-darkblue f-medium" id="ondemandTitle">On Demand</h1>
+				<div class="overflow-auto" id="ondemandContent">
+					<table>
+						<thead>
+							<!-- Columnas generadas automáticamente dependiendo de las categorías de todos los eventos -->
+							<tr class="f-bold" id="cat-header"></tr>
+						</thead>
+						<tbody>
+							<!-- Columnas generadas automáticamente dependiendo de las categorías de todos los eventos -->
+							<tr id="cat-content"></tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<!-- El popup abre desde la función eventCalendar.open() y recibe como único argumento un objeto EventApi de fullcalendar -->
+		<div id="event" do-toggle-id="event" class="is-popup">
+			<div do-toggle="x" class="display-flex overflow-auto">
+				<div>
+					<i class="close icon-close" do-toggle="x"></i>
+					<div class="ev-title f-bold">Título</div>
+					<!-- -->
+					<div id="ev-metadata" class="overflow-auto">
+						<span class="ev-date icon-calendar"></span>
+						<span class="ev-time icon-time"></span>
+						<div class="ev-location icon-location"></div>
+						<div class="ev-speaker icon-speaker">
+							<span>Ponentes:</span>
+							<div class="ev-speaker-list"></div>
+						</div>
+					</div>
+					<div id="ev-actions">
+						<div class="img-btn fue" go-email="ET1 | EF1, EF2">
+							<!--
+								Si el FUE es un template de veeva, sólo cambiar ET1 por el ID del template.
+								Para EF1 y EF2 son los ID de los fragmentos.
+								Si no tiene fragmentos dejar sólo el número de fragmento.
+								Para mantener el escuchador de abrir templates, sólo cambiar dinámicamente el valor del atributo go-email
+								Si desea cambiar por una función específica, utilizar el atributo on-click="miFuncion()"
+							-->
+							<img src="shared/media/images/btn-fue.png" />
+						</div>
+						<!-- Falta hacer que el botón ver agenda se muestre dinámicamente -->
+						<div class="img-btn ver_agenda __visible" do-toggle="o /event-agenda">
+							<img src="shared/media/images/btn-ver_agenda.png" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Abierto directamente por el botón Ver Agenda -->
+		<div id="agenda" do-toggle-id="event-agenda" class="is-popup">
+			<div do-toggle="x" class="display-flex">
+				<div>
+					<i class="close icon-close" do-toggle="x"></i>
+					<div class="ev-agenda-detail overflow-auto">
+						<img src="media/images/agenda-test.jpg" /> <!-- Imagen de la agenda del evento, puede cambiar el SRC dinámicamente desde las propiedades del evento. Configurar similar al título, y en la misma función al abrir el evento -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

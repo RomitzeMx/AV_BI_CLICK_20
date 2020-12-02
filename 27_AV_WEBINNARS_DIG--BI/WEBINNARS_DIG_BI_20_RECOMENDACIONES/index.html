@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=1" />
+		<meta name="format-detection" content="telephone=no" />
+	<!-- START $ -->
+		<link rel="stylesheet" href="shared/css/$/utils.core.css" />
+		<script src="shared/js/$/utils.core.js"></script>
+		<!-- <link rel="stylesheet" href="shared/css/$/framework.name.css" /> -->
+		<!-- <script src="shared/js/$/framework.name.js"></script> -->
+		<link rel="stylesheet" href="shared/css/$/platform.veeva.css" />
+		<script src="shared/js/$/platform.veeva.js"></script>
+	<!-- END $ -->
+	<!-- START GLOBAL -->
+		<link rel="stylesheet" href="shared/css/index.css" />
+		<script src="shared/js/index.js"></script>
+		<script src="shared/js/menu.js"></script>
+	<!-- END GLOBAL -->
+	<!-- START LOCAL -->
+		<link rel="stylesheet" href="css/index.css" />
+		<!-- <script src="js/index.js"></script> -->
+	<!-- END LOCAL -->
+	</head>
+	<body>
+		<content id="body">
+			<header>
+				<div>
+					<div>
+						<div class="title">
+							<div>Recomendaciones para mejorar la <b>experiencia de usuario</b></div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<div class="body recomendaciones f-semibold display-flex">
+				<div>
+					<ul>
+						<li class="navegador">
+							<div><i class="icon-web"></i></div>
+							<div><b class="c-darkblue">Navegador web actualizado.</b> Asegúrese de que cuenta con las actualizaciones más recientes en su navegador.</div>
+							<div do-toggle="* _ recomendaciones">
+								<i class="icon-info" do-toggle=""></i>
+								<img src="media/images/navegador.jpg" />
+							</div>
+						</li>
+						<li class="conexion">
+							<div><i class="icon-inalambrico"></i></div>
+							<div><b class="c-darkblue">Conexión de internet de banda ancha.</b> <br /> La velocidad mínima recomendable es de 10 Mb.</div>
+						</li>
+						<li class="comp-video">
+							<div><i class="icon-video"></i></div>
+							<div><b class="c-darkblue">Comprobar video.</b> Debe dar <span class="c-blue">click</span> en el botón de play para reproducir la plática.</div>
+							<div do-toggle="* _ recomendaciones">
+								<i class="icon-info" do-toggle=""></i>
+								<img src="media/images/comp-video.jpg" />
+							</div>
+						</li>
+						<li class="comp-audio">
+							<div><i class="icon-audio"></i></div>
+							<div><b class="c-darkblue">Comprobar el audio.</b> Debe presionar sobre el icono del altavoz del reproductor para activarlo.</div>
+							<div do-toggle="* _ recomendaciones">
+								<i class="icon-info" do-toggle=""></i>
+								<img src="media/images/comp-audio.jpg" />
+							</div>
+						</li>
+					</ul>
+					<div>
+						<img class="img-btn fue" src="shared/media/images/btn-fue.png" go-email="ET1 | EF1, EF2" />
+					</div>
+				</div>
+			</div>
+		</content>
+	</body>
+</html>

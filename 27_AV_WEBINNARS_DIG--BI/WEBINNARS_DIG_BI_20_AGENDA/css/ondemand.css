@@ -1,0 +1,88 @@
+#ondemand>*,
+#ondemand{
+	position: absolute;
+	z-index: 1;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+}
+#ondemand{
+	background-color: #fff;
+	margin-top: var(--top);
+	margin-bottom: var(--bottom);
+}
+#ondemand:not(.toggle-active)>*{
+	transform: translate(0px, 99%);
+}
+#ondemand>*{
+	padding-top: 15px;
+	padding-bottom: 10px;
+}
+#ondemand>*>*{
+	transition: none;
+}
+/* toolbar */
+#ondemand .fc-header-toolbar{
+	position: absolute;
+	right: 71px;
+	top: 23px;
+}
+/* button */
+#ondemand button{
+	background-color: #F2F2F2 !important;
+	display: inline-block !important;
+	width: initial !important;
+}
+/* table */
+#ondemand #ondemandTitle{
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 25px;
+	padding: 4px 10px;
+}
+#ondemand #ondemandContent{
+	display: block;
+	width: 100%;
+	height: 94.3%;
+}
+#ondemand #ondemandContent>table{
+	width: 100%;
+	height: 100%;
+}
+/* category header */
+#cat-header{
+	font-size: 11px;
+	text-align: center;
+}
+#cat-header>*{
+	padding: 0.9em 10px 0.75em;
+	height: 1%;
+}
+/* category content */
+#ondemand #cat-content{
+	font-size: 11px;
+	text-align: left;
+}
+#ondemand #cat-header>*,
+#ondemand #cat-content>*{
+	min-width: 200px;
+}
+#ondemand #cat-content>*{
+	background-color: #F2F2F2;
+	padding: 10px 5px;
+}
+#ondemand #cat-content>*:not(:first-child){
+	border-left: solid 1px rgba(153, 153, 153, 0.2);
+}
+#ondemand #cat-content>*>ul{
+	display: block;
+}
+#ondemand #cat-content>*>ul>li{
+	cursor: pointer;
+	display: block;
+	border: solid 1px;
+	border-radius: 3px;
+	margin-bottom: 5px;
+	padding: 5px 10px;
+}

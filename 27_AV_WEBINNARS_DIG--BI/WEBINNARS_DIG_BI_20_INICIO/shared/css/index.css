@@ -1,0 +1,134 @@
+@import url(../media/fonts/icon.css);
+@import url(menu.css);
+:root{
+	--top: 43px;
+	--bottom: 61px;
+}
+body{
+	background-color: #FFFFFF;
+	color: var(--COLOR--default);
+}
+#body:not(body){
+	background-image: url(../media/images/background.png);
+	background-position-y: calc(var(--top) * -1);
+	margin-top: var(--top);
+	margin-bottom: var(--bottom);
+}
+html[bg="blue"] #body{
+	background-image: url(../media/images/background-blue.png);
+}
+/* body class */
+#body>.body{
+	float: left;
+	width: 100%;
+}
+/* bottom bar */
+menu.framework#top>content>*>*>menu,
+menu.framework#top,
+#bottom-bar{
+	background-color: var(--COLOR--darkblue);
+	position: absolute;
+	z-index: 100;
+	left: 0px;
+	right: 0px;
+	color: #fff;
+}
+#bottom-bar{
+	background-image: -webkit-linear-gradient(-180deg, rgba(61, 124, 201, 1), rgba(61, 124, 201, 0));
+	bottom: 0px;
+	height: var(--bottom);
+	border-top: solid 3px #fff;
+	font-family: Arial;
+}
+#bottom-bar>content{
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+#bottom-bar>content>*{
+	display: table-row;
+}
+#bottom-bar>content>*>*{
+	display: table-cell;
+	vertical-align: middle;
+	padding: 0px 19px;
+}
+#bottom-bar .disclaimer{
+	font-size: 6px;
+}
+#bottom-bar .disclaimer>p{
+	margin: 1.3em 0px;
+}
+#bottom-bar .boehringer{
+	width: 32%;
+	white-space: nowrap;
+}
+#bottom-bar .boehringer>*{
+	display: inline-block;
+	vertical-align: middle;
+}
+#bottom-bar .boehringer .logo{
+	padding-right: 20px;
+	border-right: solid 1px;
+}
+#bottom-bar .boehringer .logo>img{
+	width: 93px;
+}
+#bottom-bar .boehringer .info{
+	padding-left: 20px;
+	font-size: 6px;
+}
+#bottom-bar .boehringer .info b{
+	font-weight: bold;
+}
+/* header */
+#body>header{
+	margin: 37px 75px;
+}
+#body>header>*{
+	display: table;
+	width: 100%;
+}
+#body>header>*>*{
+	display: table-row;
+}
+#body>header>*>*>*{
+	position: relative;
+	display: table-cell;
+	vertical-align: middle;
+}
+#body>header .logo-bi-click{
+	width: 1%;
+}
+#body>header .logo-bi-click>img{
+	width: 241px;
+}
+#body>header .title{
+	color: var(--COLOR--darkblue);
+	font-size: 28px;
+	letter-spacing: 0.001em;
+	line-height: 1.3;
+}
+#body>header .title>*{
+	position: absolute;
+	left: 28px;
+	right: 0px;
+	top: 5px;
+}
+#body>header .title>*>b{
+	color: var(--COLOR--blue);
+}
+/* boton email */
+.img-btn{
+	background-color: #3A7CC8;
+	border: solid 1px #3A7CC8;
+	box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.25);
+	border-radius: 4px;
+	overflow: hidden;
+}
+.img-btn.fue{
+	width: 103px;
+}
+.img-btn.ver_agenda{
+	width: 80px;
+}

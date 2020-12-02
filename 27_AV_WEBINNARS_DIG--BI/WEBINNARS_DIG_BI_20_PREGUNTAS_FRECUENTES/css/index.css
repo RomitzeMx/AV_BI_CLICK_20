@@ -1,0 +1,87 @@
+#body .preguntas{
+	position: relative;
+	background-color: #FAFAFA;
+	display: block;
+	float: none;
+	margin: 0px auto;
+	margin-top: -12px;
+	width: 92%;
+	height: 534px;
+	box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.25);
+	border-radius: 12px;
+	padding: 32px 31px;
+	font-size: 20px;
+}
+#body .preguntas>*{
+	margin-bottom: 12px;
+}
+/* title */
+#body .preguntas h1{
+	cursor: pointer;
+	padding: 0.2em 0em;
+	font-size: 22px;
+	font-family: "Font/MyriadPro/Bold";
+	color: var(--COLOR--darkblue);
+	letter-spacing: -0.01em;
+}
+#body .preguntas h1>i[class^="icon-"]{
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 13px;
+	font-size: 10px;
+	color: var(--COLOR--blue-2);
+}
+#body .preguntas>*.toggle-active h1>i[class^="icon-"]{
+	color: #CCCCCC;
+}
+/* content */
+#body .preguntas h1+div{
+	height: 0px;
+	overflow: hidden;
+}
+#body .preguntas h1+div>div{
+	line-height: 1;
+}
+#body .preguntas h1+div>div:after,
+#body .preguntas h1+div>div:before{
+	content: "-";
+	display: block;
+	font-size: 0px;
+}
+#body .preguntas>*:not(.toggle-active) h1+div>div{
+	transform: scale(0.95);
+	opacity: 0;
+}
+#body .preguntas h1+div p:not(:first-child){
+	margin-top: 0.3em;
+}
+#body .preguntas h1+div>div>*:last-child{
+	margin-bottom: 12px;
+}
+#body .preguntas h1+div>div>div{
+	font-size: 0px;
+	margin-top: 15px;
+	text-align: center;
+}
+#body .preguntas h1+div>div>div>img{
+	display: inline-block;
+	vertical-align: top;
+	margin: 0px 6px;
+	box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.25);
+}
+/* preguntas */
+#body .preguntas .recuperar,
+#body .preguntas .sesion{
+	width: 182px;
+}
+#body .preguntas .menu{
+	width: 300px;
+}
+#body .preguntas .eventos{
+	width: 426px;
+}
+#body .preguntas .ayuda{
+	background-color: #0073B9;
+	width: 129px;
+	border-radius: 100px;
+}

@@ -1,0 +1,76 @@
+#body .body{
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	counter-reset: paso;
+}
+#body .pasos{
+	position: absolute;
+}
+#body .pasos>.paso{
+	counter-increment: paso;
+	position: absolute;
+	right: 100%;
+	bottom: 50%;
+	width: 62px;
+	height: 50%;
+	box-sizing: content-box;
+	padding-bottom: 6px;
+	border-left: solid 1px;
+	border-bottom: solid 1px;
+	font-family: "Font/MyriadPro/Semibold";
+	color: var(--COLOR--blue-2);
+}
+#body .pasos>.paso:after{
+	background-color: var(--COLOR--darkblue);
+	border-radius: 100px;
+	content: counter(paso);
+	position: absolute;
+	left: 0px;
+	bottom: 100%;
+	width: 48px;
+	height: 48px;
+	font-size: 40px;
+	text-align: center;
+	line-height: 1.35;
+	color: #fff;
+	transform: translate(-50%, 0%);
+}
+#body .paso-1{
+	top: 171px;
+    left: 175px;
+    width: 229px;
+}
+#body .paso-2{
+    top: 171px;
+    right: 99px;
+    width: 398px;	
+}
+.img-borde{
+	border: 5px solid var(--COLOR--blue-2);
+	box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.5);	
+}
+#body .pasos .txt{
+	position: absolute;
+	left: -2px;
+	right: 0px;
+	top: 100%;
+	margin-top: 32px;
+	font-family: "Font/MyriadPro/Semibold";
+	font-size: 18px;
+	color: var(--COLOR--darkblue);
+	line-height: 1.15;
+	letter-spacing: -0.01em;
+}
+#body .paso-1 .txt{
+	margin-right: -14px;
+}
+#body .paso-2 .txt{
+	margin-right: -20px;
+}
+#body .img-btn.fue{
+	position: absolute;
+	right: 34px;
+	bottom: 8px;
+}

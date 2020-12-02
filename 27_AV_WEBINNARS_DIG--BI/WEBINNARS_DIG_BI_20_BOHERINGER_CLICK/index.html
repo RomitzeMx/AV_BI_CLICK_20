@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=1" />
+		<meta name="format-detection" content="telephone=no" />
+	<!-- START $ -->
+		<link rel="stylesheet" href="shared/css/$/utils.core.css" />
+		<script src="shared/js/$/utils.core.js"></script>
+		<!-- <link rel="stylesheet" href="shared/css/$/framework.name.css" /> -->
+		<!-- <script src="shared/js/$/framework.name.js"></script> -->
+		<link rel="stylesheet" href="shared/css/$/platform.veeva.css" />
+		<script src="shared/js/$/platform.veeva.js"></script>
+	<!-- END $ -->
+	<!-- START GLOBAL -->
+		<link rel="stylesheet" href="shared/css/index.css" />
+		<script src="shared/js/index.js"></script>
+		<script src="shared/js/menu.js"></script>
+	<!-- END GLOBAL -->
+	<!-- START LOCAL -->
+		<link rel="stylesheet" href="css/index.css" />
+		<!-- <script src="js/index.js"></script> -->
+	<!-- END LOCAL -->
+	</head>
+	<body>
+		<content id="body">
+			<header font="MyriadPro">
+				<div>
+					<div>
+						<div class="title">
+							<div>
+								<b>Boehringer click es una plataforma digital</b> diseñada para brindar educación médica continua a los profesionales de la salud.
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<div class="body" do-toggle-id="pantalla">
+				<div class="laptop">
+					<img src="media/images/laptop.jpg" />
+					<div class="señalamientos">
+						<div class="cuenta" do-toggle="o /pantalla/cuenta instrucciones" do-toggle-id="cuenta"></div>
+						<div class="tutorial" do-toggle="o /pantalla/tutorial instrucciones" do-toggle-id="tutorial"></div>
+						<div class="envivo" do-toggle="o /pantalla/envivo instrucciones" do-toggle-id="envivo"></div>
+						<div class="buscar" do-toggle="o /pantalla/buscar instrucciones" do-toggle-id="buscar"></div>
+						<div class="relacionado" do-toggle="o /pantalla/relacionado instrucciones" do-toggle-id="relacionado"></div>
+						<div class="idioma" do-toggle="o /pantalla/idioma instrucciones" do-toggle-id="idioma"></div>
+						<div class="transcripcion" do-toggle="o /pantalla/transcripcion instrucciones" do-toggle-id="transcripcion"></div>
+						<div class="descarga" do-toggle="o /pantalla/descarga instrucciones" do-toggle-id="descarga"></div>
+					</div>
+				</div>
+				<div class="instrucciones f-bold" font="Nexa">
+					<ul>
+						<li class="cuenta" do-toggle="* /pantalla/cuenta instrucciones">
+							<i class="icon-cuenta"></i>
+							<div><span>Mi cuenta</span></div>
+							<i class="icon-message"></i>
+						</li>
+						<dt do-toggle-id="cuenta">
+							<div>
+								<i class="icon-close" do-toggle="x"></i>
+								<h1>Mi cuenta</h1>
+								<div>
+									<p>Los usuarios pueden editar su perfil, ver eventos agendados, historial de videos reproducidos y contenido sin completar.</p>
+									<p>Para contenido sin terminar, están disponibles las opciones de “Reanudar reproducción” o “Ver desde el principio”</p>
+								</div>
+							</div>
+						</dt>
+						<li class="tutorial" do-toggle="* /pantalla/tutorial instrucciones">
+							<i class="icon-tutorial"></i>
+							<div><span>Tutoriales de uso</span></div>
+							<i class="icon-message"></i>
+						</li>
+						<dt do-toggle-id="tutorial">
+							<div>
+								<i class="icon-close" do-toggle="x"></i>
+								<h1>Tutoriales de uso</h1>
+								<div>
+									<p>Para Transcript Interactivo, se muestra un tutorial explicando la funcionalidad.</p>
+									<p>Después de la primera vez que se muestra un tutorial a un usuario, la opción de reproducirlo nuevamente queda habilitada para videos que cuenten con esta funcionalidad.</p>
+								</div>
+							</div>
+						</dt>
+						<li class="envivo" do-toggle="* /pantalla/envivo instrucciones">
+							<i class="icon-envivo"></i>
+							<div><span>Evento en vivo</span></div>
+							<i class="icon-message"></i>
+						</li>
+						<dt do-toggle-id="envivo">
+							<div>
+								<i class="icon-close" do-toggle="x"></i>
+								<h1>Evento en vivo</h1>
+								<div>
+									<p>En la página de cada evento se proporciona información detallada del título de la ponencia, agenda y speaker.</p>
+									<p>Una breve reseña curricular de los ponentes aparece debajo de cada video.</p>
+								</div>
+							</div>
+						</dt>
+						<li class="buscar" do-toggle="* /pantalla/buscar instrucciones">
+							<i class="icon-buscar"></i>
+							<div><span>Barra de búsqueda</span></div>
+							<i class="icon-message"></i>
+						</li>
+						<dt do-toggle-id="buscar">
+							<div>
+								<i class="icon-close" do-toggle="x"></i>
+								<h1>Barra de búsqueda</h1>
+								<div>
+									<p>Boehringer Click está diseñado para proporcionar una excelente experiencia de usuario. Todo el contenido se clasifica por categoría, tema y evento.</p>
+									<p>Una barra de búsqueda se encuentra disponible en todo momento.</p>
+								</div>
+							</div>
+						</dt>
+						<li class="relacionado" do-toggle="* /pantalla/relacionado instrucciones">
+							<i class="icon-relacionado"></i>
+							<div><span>Contenido relacionado</span></div>
+							<i class="icon-message"></i>
+						</li>
+						<dt do-toggle-id="relacionado">
+							<div>
+								<i class="icon-close" do-toggle="x"></i>
+								<h1>Contenido relacionado</h1>
+								<div>
+									<p>Cuando un usuario reproduce un video, se despliega una barra lateral que muestra contenido relacionado, de acuerdo a etiquetas, temas o eventos similares.</p>
+									<p>Todos los videos se encuentran tagueados.</p>
+								</div>
+							</div>
+						</dt>
+						<li class="idioma" do-toggle="* /pantalla/idioma instrucciones">
+							<i class="icon-altavoz"></i>
+							<div><span>Cambio de idioma</span></div>
+							<i class="icon-message"></i>
+						</li>
+						<dt do-toggle-id="idioma">
+							<div>
+								<i class="icon-close" do-toggle="x"></i>
+								<h1>Cambio de idioma</h1>
+								<div>
+									<p>Los usuarios pueden cambiar el idioma del audio con solo activar y desactivar el botón de Traducción.</p>
+									<p>Esta función está disponible para videos en español e inglés.</p>
+								</div>
+							</div>
+						</dt>
+						<dt do-toggle-id="transcripcion">
+							<div class="bottom">
+								<i class="icon-close" do-toggle="x"></i>
+								<h1>Transcripción interactiva</h1>
+								<div>
+									<p>Esta funcionalidad permite a los usuarios buscar palabras clave dentro de los videos, para ir al momento exacto donde se mencionan dichas palabras.</p>
+									<p>El usuario podrá leer el contexto en el que se incluye la palabra, antes de dar click para ir a ese momento exacto del video.</p>
+								</div>
+							</div>
+						</dt>
+						<li class="transcripcion" do-toggle="* /pantalla/transcripcion instrucciones">
+							<i class="icon-subtitulos"></i>
+							<div><span>Transcripción interactiva</span></div>
+							<i class="icon-message"></i>
+						</li>
+						<dt do-toggle-id="descarga">
+							<div class="bottom">
+								<i class="icon-close" do-toggle="x"></i>
+								<h1>Descarga de constancias</h1>
+								<div>
+									<p>Para eventos seleccionados en vivo y on demand, se otorgarán certificados avalados por diferentes sociedades médicas.</p>
+									<p>Para descargar la constancia, el usuario debe cumplir con los requisitos que cada sociedad o consejo establece.</p>
+								</div>
+							</div>
+						</dt>
+						<li class="descarga" do-toggle="* /pantalla/descarga instrucciones">
+							<i class="icon-descarga"></i>
+							<div><span>Descarga de constancias</span></div>
+							<i class="icon-message"></i>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</content>
+	</body>
+</html>

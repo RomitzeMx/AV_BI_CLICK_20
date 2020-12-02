@@ -1,0 +1,37 @@
+#body .box-color{
+	position: relative;
+	margin-top: 17px;
+	height: 494px;
+	background-color: #3d7cc9;
+}
+#body .box-color:after{
+	content: "";
+	position: absolute;
+	z-index: 0;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	height: 119px;
+	background-color: #1e3f77;
+}
+#body .video{
+	position: absolute;
+	z-index: 1;
+    width: 777px;
+    left: 50%;
+    top: 50%;
+	transform: translate(-50%, -50%);
+}
+#body .video>img{
+	position: absolute;
+	z-index: 2;
+    width: 47px;
+    left: 45.5%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+#body .img-btn.fue{
+	float: right;
+	margin-right: 34px;
+	margin-top: 2px;
+}

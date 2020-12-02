@@ -1,0 +1,17 @@
+#agenda>*>*{
+	padding: 0px;
+	width: 587px !important;
+}
+#agenda>*>*>.close{
+	background-color: #fff;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	margin: 0px;
+	border-radius: 20px;
+	border-top-right-radius: 0px;
+}
+#agenda .ev-agenda-detail{
+	padding-top: 43px;
+	max-height: 600px;
+}
