@@ -32,6 +32,7 @@
 		<script src="lib/main.js"></script>
 		<script src="js/popup.js"></script>
 		<script src="js/fullcalendar.js"></script>
+		<script src="js/jquery.js"></script>
 		<!-- <script src="js/calendar-js/theme-chooser.js"></script> -->
 	<!-- START LOCAL -->
 		<!-- <link rel="stylesheet" href="css/index.css" /> -->
@@ -49,6 +50,7 @@
 				<div>
 					<div class="fc-button-group">
 						<button class="fc-button fc-has-icon" do-toggle="o ondemand">ON DEMAND</button>
+						<button class="fc-button actualizar-eventos fc-has-reload">ACTUALIZAR EVENTOS</button>
 					</div>
 				</div>
 			</div>
@@ -118,6 +120,10 @@
 					</div>
 				</div>
 			</div>
+		</div>
+
+		<div class="overlay">
+			<img src="media/images/fullcalendar/loading.gif" />
 		</div>
 	</body>
 </html>

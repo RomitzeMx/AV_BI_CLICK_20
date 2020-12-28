@@ -82,6 +82,12 @@
 	background-position: 94% center;
 	padding-right: 27px !important;
 }
+#body .fc-header-toolbar .fc-button.fc-has-reload{
+	background-size: 19px auto;
+	background-image: url(../media/images/fullcalendar/reload-blue.png);
+	background-position: 94% center;
+	padding-right: 27px !important;
+}
 #body .fc-header-toolbar .fc-button.fc-has-icon.fc-button-sm{
 	background-position: right center;
 	padding-right: 22px !important;
@@ -140,6 +146,7 @@
 	appearance: none;
 	border: solid 1px rgba(128, 128, 128, 0.75);
 	border-radius: 1px;
+	display:none !important;
 }
 #body .fc-header-toolbar .fc-button>input[type="radio"]{
 	border-radius: 100px;
@@ -230,4 +237,27 @@
 /* botones de categoría */
 #cat-button{
 	max-height: 255px;
+}
+
+.overlay{
+	position:fixed;
+	left:0;
+	right:0;
+	bottom:0;
+	top:0;
+	background-color: rgba( 0, 0, 0, 0.8 );
+	z-index:10000000000;
+	text-align: center;
+	display:none;
+}
+
+.overlay img{
+	display:block;
+	position:absolute;
+	width:100px;
+	left:50%;
+	top:50%;
+	transform: translate( -50%, -50% );
+	-moz-transform: translate( -50%, -50% );
+	-webkit-transform: translate( -50%, -50% );
 }

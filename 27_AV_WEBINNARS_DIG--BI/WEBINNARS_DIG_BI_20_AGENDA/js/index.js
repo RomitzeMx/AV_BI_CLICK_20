@@ -2,17 +2,60 @@ document.addEventListener('DOMContentLoaded', function() {
 	/**
 	 * category (String)
 	 * Categoría del evento
-	 * 
+	 *
 	 * location (String)
 	 * URL o lugar del evento
-	 * 
+	 *
 	 * fue (String)
 	 * ID del template y/o fragmento(s)
-	 * 
+	 *
 	 * speakers
 	 * Lista de objetos que contienen el nombre y la descripción del ponente
-	 *  */ 
-	fullcalendarInit([
+	 *  */
+
+	 let eventos = [];
+
+
+
+	 $( document ).ready( function(){
+		 //localStorage.clear();
+		 $( ".actualizar-eventos" ).on( 'click', function(){
+			 fetchEvents();
+		});//on click actualizar-eventos
+
+		fetchEvents();
+
+	});//document ready
+
+	function fetchEvents(){
+		$( '.overlay' ).show();
+		$.get( "https://immense-plains-88233.herokuapp.com/getevents", function( data ) {
+		 localStorage.setItem( "eventosLocal", JSON.stringify( data ) );
+		 eventos = JSON.parse( localStorage.getItem( "eventosLocal" ) );
+		 console.log( eventos );
+		 $( '.overlay' ).hide();
+		 fullcalendarInit( eventos );
+	 })
+	 .done(function( data ) {
+
+	 })
+	 .fail(function() {
+		 console.log( "Couldn't obtain" );
+		 eventos = JSON.parse( localStorage.getItem( "eventosLocal" ) );
+		 console.log( eventos );
+		 $( '.overlay' ).hide();
+		 fullcalendarInit( eventos );
+	 })
+	 .always(function() {
+
+	 });
+	}
+
+
+
+
+
+	/*fullcalendarInit([
 		{
 			"title": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet",
 			"start": "2020-12-01T16:10:00-05:00",
@@ -68,6 +111,13 @@ document.addEventListener('DOMContentLoaded', function() {
 			"fue": "987 | 22, 33"
 		},
 		{
+			"title": "Evento prueba 1",
+			"start": "2021-01-19T16:00:00.000",
+			"end": "2021-01-19T18:00:00.000",
+			"category": "Respiratorio",
+			"fue": "987 | 22, 33"
+		},
+		{
 			"title": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet",
 			"start": "2020-12-16T16:00:00-05:00",
 			"category": "Cardiometabólico"
@@ -94,5 +144,5 @@ document.addEventListener('DOMContentLoaded', function() {
 			"start": "2020-12-12T12:00:00-05:00",
 			"category": "Respiratorio"
 		}
-	]);
+	]);*/
 });

@@ -4,6 +4,7 @@ var eventCalendar={
 	eventPopup: '',
 	open: function(ev){
 		let prop=ev.extendedProps;
+		$( '.ev-agenda-detail img').attr( 'src', 'data:image/jpeg;base64,' + prop.img_veeva_b64 );
 		let date={
 			start: {
 				day: ev.start.getDate(),
@@ -71,6 +72,7 @@ popupMap.event.click.push((args) => {
 	if(args.ele.hasClass('img-btn ver_agenda')){
 		$$_('#agenda>*')[0].scrollTop=0;
 		$$_('#agenda .ev-agenda-detail')[0].scrollTop=0;
+
 	}
 	else if(args.ele.hasClass('img-btn event')){
 		$$_('#event>*')[0].scrollTop=0;
