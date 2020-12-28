@@ -23,7 +23,14 @@ document.addEventListener('DOMContentLoaded', function() {
 			 fetchEvents();
 		});//on click actualizar-eventos
 
-		fetchEvents();
+		if( localStorage.getItem( "eventosLocal" ) == null || localStorage.getItem( "eventosLocal" ) == 'undefined' ){
+			fetchEvents();
+		}else{
+			eventos = JSON.parse( localStorage.getItem( "eventosLocal" ) );
+ 		 console.log( eventos );
+ 		 $( '.overlay' ).hide();
+ 		 fullcalendarInit( eventos );
+		}
 
 	});//document ready
 
